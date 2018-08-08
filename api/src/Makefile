@@ -40,6 +40,7 @@ $(OBJDIR):
 -include $(DEPS)
 
 basicinstall: $(OBJDIR)/$(OUT)
+	./get_mvcmd.sh
 	mkdir -p $(INSTALLDIR)/include/
 	mkdir -p $(INSTALLDIR)/lib/
 	cp $(OBJDIR)/$(OUT) $(INSTALLDIR)/lib/
